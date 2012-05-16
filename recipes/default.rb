@@ -109,6 +109,7 @@ end
       owner node.elasticsearch[:user] and group node.elasticsearch[:user]
       to    "#{node.elasticsearch[:dir]}/#{elasticsearch}/bin/#{f}"
     end
+    ignore_failure true
 end
 
 # Create file with ES environment variables
